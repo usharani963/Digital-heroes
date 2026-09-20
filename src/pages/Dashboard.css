@@ -1,0 +1,576 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: #f7f7f4;
+  color: #111;
+}
+
+/* NAVBAR */
+
+.dashboard-navbar {
+  height: 76px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8e4;
+}
+
+.dashboard-logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.dashboard-nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.dashboard-nav-links a {
+  font-size: 14px;
+  color: #555;
+}
+
+.dashboard-nav-links a:hover {
+  color: #111;
+}
+
+.dashboard-logout {
+  border: 1px solid #222;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+/* MAIN */
+
+.dashboard-main {
+  width: 86%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 0;
+}
+
+/* HEADER */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 55px;
+}
+
+.dashboard-eyebrow,
+.card-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #777;
+}
+
+.dashboard-header h1 {
+  font-size: 52px;
+  margin: 12px 0;
+  letter-spacing: -2px;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 17px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.dashboard-subscribe-btn {
+  background: #111;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+/* SECTIONS */
+
+.dashboard-section {
+  margin-bottom: 50px;
+}
+
+.dashboard-section > h2,
+.section-heading h2 {
+  font-size: 26px;
+  margin-top: 8px;
+}
+
+/* SUBSCRIPTION */
+
+.subscription-card {
+  margin-top: 20px;
+  padding: 28px;
+  background: white;
+  border: 1px solid #e4e4df;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription-info h3 {
+  margin: 12px 0 6px;
+  font-size: 20px;
+}
+
+.subscription-info p {
+  color: #777;
+}
+
+.status-badge {
+  display: inline-block;
+  background: #e9f6e9;
+  color: #267326;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.subscription-date {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: right;
+}
+
+.subscription-date span {
+  color: #888;
+  font-size: 13px;
+}
+
+.subscription-date strong {
+  font-size: 16px;
+}
+
+/* GRID */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.dashboard-card {
+  background: white;
+  border: 1px solid #e4e4df;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h2 {
+  margin-top: 8px;
+}
+
+.card-action {
+  border: 1px solid #222;
+  background: transparent;
+  padding: 9px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card-action:hover {
+  background: #111;
+  color: white;
+}
+
+/* SCORES */
+
+.scores-list {
+  margin-top: 25px;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eeeeea;
+}
+
+.score-row span {
+  color: #777;
+  font-size: 14px;
+}
+
+.score-row strong {
+  font-size: 18px;
+}
+
+.score-note {
+  margin-top: 18px;
+  color: #888;
+  font-size: 13px;
+}
+
+/* SCORE FORM */
+
+.score-form-box {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f7f7f4;
+  border-radius: 12px;
+  border: 1px solid #e2e2dc;
+}
+
+.score-form-box h3 {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.score-error {
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  background: #fff1f1;
+  border: 1px solid #f0caca;
+  color: #b42318;
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+.score-form-group {
+  margin-bottom: 16px;
+}
+
+.score-form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.score-form-group input {
+  width: 100%;
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid #d4d4d4;
+  border-radius: 7px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.score-form-group input:focus {
+  border-color: #111;
+}
+
+.score-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.save-score-button,
+.cancel-score-button {
+  border: none;
+  padding: 11px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-score-button {
+  background: #111;
+  color: white;
+}
+
+.save-score-button:hover {
+  background: #333;
+}
+
+.save-score-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancel-score-button {
+  background: #e5e5df;
+  color: #111;
+}
+
+.cancel-score-button:hover {
+  background: #d8d8d1;
+}
+
+/* EMPTY SCORES */
+
+.empty-scores {
+  padding: 30px 0;
+  text-align: center;
+  color: #666;
+}
+
+.empty-scores p {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.empty-scores span {
+  font-size: 13px;
+}
+
+/* SCORE ACTIONS */
+
+.score-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.score-actions button {
+  border: none;
+  background: transparent;
+  color: #555;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.score-actions button:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
+/* CHARITY */
+
+.charity-card h2 {
+  margin: 8px 0 25px;
+}
+
+.charity-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: #f7f7f4;
+  border-radius: 14px;
+}
+
+.charity-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.charity-placeholder h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.charity-placeholder p {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.contribution-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.contribution-box span {
+  color: #777;
+}
+
+.contribution-box strong {
+  font-size: 25px;
+}
+
+.secondary-button {
+  border: 1px solid #222;
+  background: white;
+  padding: 10px 18px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+/* DRAW */
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.draw-status {
+  background: #111;
+  color: white;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.draw-card {
+  background: #111;
+  color: white;
+  border-radius: 18px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.draw-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.draw-item span {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.draw-item strong {
+  font-size: 20px;
+}
+
+/* WINNINGS */
+
+.empty-winnings {
+  margin-top: 20px;
+  background: white;
+  border: 1px solid #e4e4df;
+  border-radius: 18px;
+  padding: 45px;
+  text-align: center;
+}
+
+.trophy {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.empty-winnings h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.empty-winnings p {
+  color: #777;
+  max-width: 500px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* LOADING */
+
+.dashboard-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ERROR */
+
+.dashboard-error {
+  margin-bottom: 25px;
+  padding: 14px 16px;
+  background: #fff1f1;
+  border: 1px solid #f0caca;
+  color: #b42318;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+
+.dashboard-footer {
+  padding: 30px 7%;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .dashboard-nav-links {
+    display: none;
+  }
+
+  .dashboard-main {
+    width: 90%;
+    padding: 45px 0;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 40px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subscription-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .subscription-date {
+    text-align: left;
+  }
+
+  .draw-card {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .score-row {
+    flex-wrap: wrap;
+  }
+
+  .score-actions {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .score-form-actions {
+    flex-direction: column;
+  }
+}

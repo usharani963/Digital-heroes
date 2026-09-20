@@ -1,0 +1,461 @@
+.home-page {
+  background: #f7f7f4;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: auto;
+  height: 82px;
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 38px;
+}
+
+.nav-links a {
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 0.55;
+}
+
+.nav-subscribe {
+  background: #111;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 100px 50px;
+}
+
+.hero-container {
+  max-width: 1400px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(55px, 6vw, 88px);
+  line-height: 0.95;
+  letter-spacing: -5px;
+  max-width: 700px;
+}
+
+.hero h1 span {
+  display: block;
+  font-style: italic;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin-top: 35px;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.primary-button {
+  background: #111;
+  color: white;
+}
+
+.secondary-button {
+  border: 1px solid #bbb;
+  background: transparent;
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual {
+  height: 560px;
+}
+
+.visual-background {
+  height: 100%;
+  border-radius: 35px;
+  background: #deded5;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 40px;
+}
+
+.impact-card {
+  background: white;
+  width: 100%;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.impact-card p {
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.impact-card h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.impact-card span {
+  color: #666;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+  padding: 30px 50px 110px;
+}
+
+.features-container {
+  max-width: 1400px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.feature-number {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 50px;
+}
+
+.feature-card h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   CHARITY
+========================= */
+
+.charity-section {
+  background: #111;
+  color: white;
+  padding: 120px 50px;
+}
+
+.charity-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.charity-text h2 {
+  font-size: clamp(45px, 5vw, 70px);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-bottom: 30px;
+}
+
+.charity-text h2 span {
+  display: block;
+  font-style: italic;
+}
+
+.charity-text > p:not(.eyebrow) {
+  max-width: 600px;
+  color: #aaa;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.charity-stat {
+  border: 1px solid #444;
+  border-radius: 25px;
+  padding: 50px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -5px;
+}
+
+.charity-stat p {
+  color: #aaa;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-section {
+  padding: 120px 50px;
+  background: #f7f7f4;
+}
+
+.how-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.how-container > h2 {
+  font-size: 65px;
+  letter-spacing: -4px;
+  margin-bottom: 70px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.step {
+  border-top: 1px solid #ccc;
+  padding-top: 25px;
+}
+
+.step-number {
+  font-size: 14px;
+  margin-bottom: 45px;
+}
+
+.step h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.step p {
+  color: #666;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta-section {
+  background: #deded5;
+  padding: 130px 50px;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.cta-container h2 {
+  font-size: clamp(45px, 5vw, 70px);
+  line-height: 1;
+  letter-spacing: -4px;
+  margin-bottom: 25px;
+}
+
+.cta-container h2 span {
+  display: block;
+  font-style: italic;
+}
+
+.cta-container > p:not(.eyebrow) {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #111;
+  color: white;
+  padding: 45px 50px;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer strong {
+  font-size: 20px;
+}
+
+.footer p {
+  color: #888;
+  margin-top: 8px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.copyright {
+  font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar-container {
+    padding: 0 25px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    padding: 70px 25px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    height: 400px;
+  }
+
+  .features {
+    padding: 20px 25px 70px;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+
+  .charity-section {
+    padding: 80px 25px;
+  }
+
+  .charity-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .how-section {
+    padding: 80px 25px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cta-section {
+    padding: 90px 25px;
+  }
+
+  .footer {
+    padding: 40px 25px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+}
